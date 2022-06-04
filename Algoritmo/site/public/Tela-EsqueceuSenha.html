@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Um sistema que permite analise em tempo real da frequencia de pessoas!">
+    <title>Login - 2Sense</title>
+    <link rel="stylesheet" href="css/estiloesqueceu.css">
+    <link rel="shortcut icon" type="imagex/png" href="assets/img/logo.ico">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="index.html"><img src="assets/img/logo.png" alt="Logo da marca." class="cabecalho-logo"></a>
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item" href="index.html">Início</a>
+            <a class="cabecalho-menu-item" href="index.html#p2">A 2Sense</a>
+            <a class="cabecalho-menu-item" href="index.html#p3">Contato</a>
+            <a class="cabecalho-menu-item" href="login.html">Login</a>
+        </nav>
+    </header>
+    <center>
+        <main class="conteudo">
+            <section class="conteudo-terciario transicao">
+                <div class="formulario"></div>
+                <div class="estilo-formulario" id="div1">
+                    <form action="mailto:twosensebrasil@hotmail.com" method="post" enctype="text/plain">
+                        <fieldset class="estilo-formulario-caixa">
+                            <legend>Recupere sua Senha 2SENSE</legend>
+                            <br>
+                            <div class="inputForm">
+                                <label for="email" class="labelInput">Email</label></label>
+                                <input type="email" placeholder="Digite seu e-mail" name="E-mail" class="inputUser"
+                                    required autofocus />
+                            </div>
+                            <br>
+                            <a class="botaocad" href="cadastro.html">Não tem uma conta? <b>Crie uma!</b></a>
+                            <br> <br>
+                            <input class="submit" type="submit" value="Enviar" />
+                            <input style="margin-top: 1vh;" class="submit" type="reset" value="Limpar" />
+                        </fieldset>
+                    </form>
+            </section>
+        </main>
+    </center>
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+
+            <div class="rodape-conteudo-sessao">
+                <p class="rodape-conteudo-titulo">Fale Conosco</p>
+                <div class="rodape-conteudo-barra"></div>
+                <a class="rodape-conteudo-ancora" href="index.html#p3">Contato</a>
+                <a class="rodape-conteudo-ancora" href="index.html#p3">0800 303 2022</a>
+            </div>
+
+            <div class="rodape-conteudo-imagem">
+                <a href="index.html"><img class="rodape-imagem" src="assets/img/logo.png"></a>
+                <p class="rodape-direito">© 2022 Todos os direitos reservados | 2Sense.</p>
+            </div>
+
+            <div class="rodape-conteudo-sessao">
+                <p class="rodape-conteudo-titulo">Endereço</p>
+                <div class="rodape-conteudo-barra"></div>
+                <p class="rodape-conteudo-ancora">
+                    São Paulo / SP <br>
+
+                    Rua Haddock Lobo, 595 <br>
+
+                    Cerqueira César <br>
+
+                    CEP 01414-001
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script id="ze-snippet"
+        src="https://static.zdassets.com/ekr/snippet.js?key=802322d7-10a2-4063-aba1-a4f12521c280"> </script>
+
+</body>
+
+</html>
+
+<script>
+    var emailvd = 'matriz@carrefour.com'
+
+    function recuperar() {
+        var email = in_usuario.value
+        if (email == "") {
+            alert("Insira um Email")
+        }
+        else {
+            if (email == emailvd) {
+                alert("E-mail encaminhado!")
+                window.location.href = "./login.html"
+            } else {
+                alert("O conteúdo inserido não esta registrado. Verifique se você digitou seu e-mail corretamente.")
+            }
+        }
+    }
+</script>
